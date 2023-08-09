@@ -1,0 +1,18 @@
+###
+GET http://localhost:9090/todos
+###
+###
+// The request body is provided in place
+POST http://localhost:9090/todos
+Content-Type: application/json
+Cookie: key=first-value
+
+{ "id" : "7",
+  "item":"wash the Jeep",
+  "completed": false
+}
+###
+###
+GET http://localhost:9090/todos/7
+###
+
